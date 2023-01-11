@@ -663,9 +663,9 @@ SWEP.Attachments = {
         Category = {"saa_54r_muz"},
         InstalledElements = {"muzzleattached"},
         Bone = "b_wpn",
-        Pos = Vector(0, 26.35, 0.6),
-        Ang = Angle(0, 270, 0),
-        Scale = 0.8,
+        Pos = Vector(0, 20, 0),
+        Ang = Angle(0, 0, 0),
+        Scale = 0.76,
     },
     {
         PrintName = "Handguard",
@@ -689,7 +689,7 @@ SWEP.Attachments = {
         Bone = "b_wpn",
         Pos = Vector(-0.025, 19.3, 0.4),
         Ang = Angle(0, 270, 180),
-        Scale = 0.7,
+        Scale = 0.665,
     },
     {
         PrintName = "Underbarrel",
@@ -706,7 +706,7 @@ SWEP.Attachments = {
         Bone = "b_wpn",
         Pos = Vector(0.81, -0.5, 0.1),
         Ang = Angle(0, 270, 0),
-        Scale = 0.8,
+        Scale = .76,
     },
     {
         PrintName = "Dustcover",
@@ -728,7 +728,7 @@ SWEP.Attachments = {
         PrintName = "magazine",
         Category = {"saa_svd_mag"},
         Bone = "b_wpn_mag",
-        Pos = Vector(0, 0, 4),
+        Pos = Vector(0, 0, -4),
         Ang = Angle(0, 00, 0),
         Scale = 1,
     },
@@ -740,7 +740,7 @@ SWEP.Attachments = {
        Pos = Vector(0, 0, 1.9),
        Ang = Angle(0, 0, 0),
 
-       Scale = 0.8,
+       Scale = .76,
    },
 }
 
