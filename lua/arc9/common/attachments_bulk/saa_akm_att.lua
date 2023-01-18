@@ -892,10 +892,38 @@ ATT.SpeedMult = 0.855/0.86
 ATT.ReloadTimeMult = 1.015
 ATT.RecoilMult = 1/1.2
 ATT.RecoilMultSights = 0.95
-
+ 
 ATT.ActivateElements = {"aks74_stock"}
 
 ARC9.LoadAttachment(ATT, "saa_aks74")
+
+-- end here
+ATT.PrintName = "AK Stamped Receiver Block"
+ATT.CompactName = "AKend"
+ATT.Description = [[Receiver modification that Covers the back of a Stamped reciever to prevent dust,mud,dirt,ETC. from entering the reciever. Perfect for a mobility oriented build that seeks for ease of use in CQB.]]
+
+
+ATT.SortOrder = 0
+ATT.Category = "saa_aks74_stock"
+
+ 
+ATT.ActivateElements = {"ak_end"}
+
+ARC9.LoadAttachment(ATT, "saa_ak_end")
+
+-- end here
+ATT.PrintName = "AKM stock bracket"
+ATT.CompactName = "AKbrack"
+ATT.Description = [[Peice on the Receiver Intended for attaching akm pattern stocks, Now without any stocks. Perfect for a mobility oriented build that seeks for ease of use in CQB.]]
+
+
+ATT.SortOrder = 0
+ATT.Category = "saa_aks74_stock"
+
+ 
+ATT.ActivateElements = {"ak_brack"}
+
+ARC9.LoadAttachment(ATT, "saa_ak_brack")
 
 -- end here
 

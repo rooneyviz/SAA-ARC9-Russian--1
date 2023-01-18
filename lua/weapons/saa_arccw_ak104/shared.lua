@@ -181,6 +181,7 @@ SWEP.MagID = "akm"
 
 SWEP.Overheat = true -- Weapon will jam when it overheats, playing the "overheat" animation.
 SWEP.HeatPerShot = 1
+SWEP.HeatCapacity = 75*(650/600) -- rounds that can be fired non-stop before the gun jams, playing the "fix" animation
 SWEP.HeatDissipation = 5 -- rounds' worth of heat lost per second
 SWEP.HeatLockout = true -- overheating means you cannot fire until heat has been fully depleted
 SWEP.HeatDelayTime = 0.8 -- Amount of time that passes before heat begins to dissipate.
@@ -367,7 +368,7 @@ SWEP.Hook_TranslateAnimation = function (self, anim)
         if self:GetUBGL() then
             suffix = "_glsetup"
         end
-    elseif attached["drum_75"] then
+    elseif attached["drum_73"] then
         suffix = "_drum"
     else
         suffix = ""
@@ -1280,6 +1281,17 @@ SWEP.AttachmentElements = {
             {4, 6},
         },
     },
+    ["ak_end"] = {
+        Bodygroups = {
+            {7, 9},
+        },
+    },
+    ["ak_brack"] = {
+        Bodygroups = {
+            {7, 10},
+        },
+    },
+
     ["s100_handguard"] = {
         Bodygroups = {
             {4, 2},

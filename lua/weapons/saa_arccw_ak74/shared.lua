@@ -365,7 +365,7 @@ SWEP.Hook_TranslateAnimation = function (self, anim)
         if self:GetUBGL() then
             suffix = "_glsetup"
         end
-    elseif attached["drum_75"] then
+    elseif attached["drum_73"] then
         suffix = "_drum"
     else
         suffix = ""
@@ -930,6 +930,18 @@ SWEP.AttachmentElements = {
             {7, 8},
         },
     },
+    ["ak_end"] = {
+        Bodygroups = {
+            {7, 9},
+        },
+    },
+    ["ak_brack"] = {
+        Bodygroups = {
+            {7, 10},
+        },
+    },
+
+
     ["aks74m_stock"] = {
         Bodygroups = {
             {7, 9},
@@ -1025,6 +1037,32 @@ SWEP.AttachmentElements = {
             {8, 1},
         },
     },
+    ["saa_ak74_73"] = {
+        Bodygroups = {
+            {11, 5},
+        },
+    },
+    ["saa_ak74_60"] = {
+        Bodygroups = {
+            {11, 4},
+        },
+    },
+    ["pmag_30"] = {
+        Bodygroups = {
+            {11, 1},
+        },
+    },
+    ["bakelite_45"] = {
+        Bodygroups = {
+            {11, 2},
+        },
+    },
+    ["poly_45"] = {
+        Bodygroups = {
+            {11, 3},
+        },
+    },
+
     ["zenit_chargehandle"] = {
         Bodygroups = {
             {1, 1},

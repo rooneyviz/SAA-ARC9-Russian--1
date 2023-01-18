@@ -181,6 +181,7 @@ SWEP.MagID = "akm"
 
 SWEP.Overheat = true -- Weapon will jam when it overheats, playing the "overheat" animation.
 SWEP.HeatPerShot = 1
+SWEP.HeatCapacity = 75*(650/600) -- rounds that can be fired non-stop before the gun jams, playing the "fix" animation
 SWEP.HeatCapacity = 75 -- rounds that can be fired non-stop before the gun jams, playing the "fix" animation
 SWEP.HeatDissipation = 5 -- rounds' worth of heat lost per second
 SWEP.HeatLockout = true -- overheating means you cannot fire until heat has been fully depleted
@@ -1212,6 +1213,17 @@ SWEP.AttachmentElements = {
             {7, 1},
         },
     },
+    ["ak_end"] = {
+        Bodygroups = {
+            {7, 9},
+        },
+    },
+    ["ak_brack"] = {
+        Bodygroups = {
+            {7, 10},
+        },
+    },
+
     ["magpul_grip"] = {
         Bodygroups = {
             {5, 3},
