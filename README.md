@@ -11,6 +11,7 @@ For further information and permission contact [Stalol](https://steamcommunity.c
 DIFFERENCES From Stalols version
 1.NEW GUN(AK105)
 2. DIFFERENT SVD ANIMATIONS(INSURGENCY ANIMS)
+3. extended mag for svd and mlok/picatinny handguard
 3. AK74 MAGS
 4. AK STOCK STUFF
 5. SANDSOTMR QUICK RELOAD ANIMS ON THE AKS FOR EMPTY RELOAD
