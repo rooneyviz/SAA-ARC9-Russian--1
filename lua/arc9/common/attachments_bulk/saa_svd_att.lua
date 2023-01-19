@@ -36,7 +36,7 @@ ATT.Attachments = {
     {
         PrintName = "OPTIC",
         Category = {"SAA_SCOPE_SMALL","SAA_SCOPE_MEDIUM","SAA_SCOPE_LARGE",},
-        Pos = Vector(0, 0, -1),
+        Pos = Vector(-4, -.56, -1.2),
         ExcludeElements = {"nodustcoveroptics"},
         InstalledElements = {"nodovetailoptics", "norearsightoptics"},
         Ang = Angle(0, 0, 0),
@@ -169,4 +169,23 @@ ATT.ActivateElements = {"svd_20"}
 ARC9.LoadAttachment(ATT, "saa_svd_20_steel")
 
 -- end here
+ATT = {}
+
+ATT.PrintName = "SVD tac M-LOK picatinny Handguard"
+ATT.Description = [[Handguard with mlok attachment points and picatinny rails.]]
+
+
+ATT.SortOrder = 0
+ATT.Category = "saa_svd_handguard"
+
+
+ATT.SprintToFireTimeMult = 0.95
+ATT.SpeedMult = 1.05
+ATT.RecoilMult = 1.075
+ATT.AimDownSightsTimeMult = 0.995
+
+ATT.ActivateElements = {"svd_mlokhandguard"}
+
+ARC9.LoadAttachment(ATT, "saa_svd_mguard")
+
 

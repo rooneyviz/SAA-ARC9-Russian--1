@@ -1110,6 +1110,12 @@ SWEP.AttachmentElements = {
             {9, 1},
         },
     },
+    ["akms_stock"] = {
+        Bodygroups = {
+            {7, 2},
+        },
+    },
+
     ["dustcover_akm"] = {
         Bodygroups = {
             {6, 1},
@@ -1208,12 +1214,12 @@ SWEP.AttachmentElements = {
     },
     ["aks74_stock"] = {
         Bodygroups = {
-            {7, 2},
+            {7,8},
         },
     },
     ["aks74m_stock"] = {
         Bodygroups = {
-            {7,8},
+            {7,9},
         },
     },
     ["akm_stock"] = {
@@ -1283,12 +1289,12 @@ SWEP.AttachmentElements = {
     },
     ["ak_end"] = {
         Bodygroups = {
-            {7, 9},
+            {7, 10},
         },
     },
     ["ak_brack"] = {
         Bodygroups = {
-            {7, 10},
+            {7, 11},
         },
     },
 

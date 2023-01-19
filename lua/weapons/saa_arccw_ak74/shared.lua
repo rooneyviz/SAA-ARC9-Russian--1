@@ -844,6 +844,12 @@ SWEP.AttachmentElements = {
             {6, 2},
         },
     },
+    ["akms_stock"] = {
+        Bodygroups = {
+            {7, 2},
+        },
+    },
+
     ["bastion_dustcover"] = {
         Bodygroups = {
             {6, 3},
@@ -932,12 +938,12 @@ SWEP.AttachmentElements = {
     },
     ["ak_end"] = {
         Bodygroups = {
-            {7, 9},
+            {7, 10},
         },
     },
     ["ak_brack"] = {
         Bodygroups = {
-            {7, 10},
+            {7, 11},
         },
     },
 

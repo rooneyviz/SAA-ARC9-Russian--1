@@ -12,7 +12,7 @@ ATT.Attachments = {
     {
         PrintName = "Dovetail",
         Category = "SAA_AK_DOVETAIL",
-        Pos = Vector(-0.5, 0.3, 1),
+        Pos = Vector(-0.5, 0.3, 2),
         Ang = Angle(0, 0, 270),
         Scale = 1,
         MergeSlots = {2}

@@ -1203,24 +1203,36 @@ SWEP.AttachmentElements = {
             {11, 2},
         },
     },
-    ["akms_stock"] = {
-        Bodygroups = {
-            {7, 2},
-        },
-    },
     ["akm_stock"] = {
         Bodygroups = {
             {7, 1},
         },
     },
-    ["ak_end"] = {
+    ["aks74m_stock"] = {
         Bodygroups = {
             {7, 9},
         },
     },
-    ["ak_brack"] = {
+    ["aks74_stock"] = {
+        Bodygroups = {
+            {7, 8},
+        },
+    },
+    ["akms_stock"] = {
+        Bodygroups = {
+            {7, 2},
+        },
+    },
+
+
+    ["ak_end"] = {
         Bodygroups = {
             {7, 10},
+        },
+    },
+    ["ak_brack"] = {
+        Bodygroups = {
+            {7, 11},
         },
     },
 

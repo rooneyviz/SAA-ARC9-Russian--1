@@ -837,7 +837,7 @@ ATT.Icon = Material("hud/arc9_saa/rus/ak74_stock.png", "mips smooth")
 
 
 ATT.SortOrder = 1
-ATT.Category = "saa_ak_stock"
+ATT.Category = "saa_ak74stock"
 ATT.Sway = 0.9
 ATT.SpeedMult = 0.855/0.91
 ATT.ReloadTimeMult = 1.03
@@ -863,7 +863,7 @@ ATT.Icon = Material("hud/arc9_saa/rus/akms.png", "mips smooth")
 
 
 ATT.SortOrder = 0
-ATT.Category = "saa_akm_stock"
+ATT.Category = "saa_ak_stock"
 
 ATT.SpeedMult = 0.855/0.86
 ATT.ReloadTimeMult = 1.015
@@ -886,7 +886,7 @@ ATT.Description = [[Receiver modification that allows use of the AK pattern side
 
 
 ATT.SortOrder = 0
-ATT.Category = "saa_aks74_stock"
+ATT.Category = "saa_ak_stock"
 
 ATT.SpeedMult = 0.855/0.86
 ATT.ReloadTimeMult = 1.015
@@ -898,13 +898,17 @@ ATT.ActivateElements = {"aks74_stock"}
 ARC9.LoadAttachment(ATT, "saa_aks74")
 
 -- end here
+-- start here
+
+ATT = {}
+
 ATT.PrintName = "AK Stamped Receiver Block"
 ATT.CompactName = "AKend"
 ATT.Description = [[Receiver modification that Covers the back of a Stamped reciever to prevent dust,mud,dirt,ETC. from entering the reciever. Perfect for a mobility oriented build that seeks for ease of use in CQB.]]
 
 
 ATT.SortOrder = 0
-ATT.Category = "saa_aks74_stock"
+ATT.Category = "saa_ak_stock"
 
  
 ATT.ActivateElements = {"ak_end"}
@@ -912,13 +916,17 @@ ATT.ActivateElements = {"ak_end"}
 ARC9.LoadAttachment(ATT, "saa_ak_end")
 
 -- end here
+-- start here
+
+ATT = {}
+
 ATT.PrintName = "AKM stock bracket"
 ATT.CompactName = "AKbrack"
 ATT.Description = [[Peice on the Receiver Intended for attaching akm pattern stocks, Now without any stocks. Perfect for a mobility oriented build that seeks for ease of use in CQB.]]
 
 
 ATT.SortOrder = 0
-ATT.Category = "saa_aks74_stock"
+ATT.Category = "saa_ak_stock"
 
  
 ATT.ActivateElements = {"ak_brack"}
@@ -937,7 +945,7 @@ ATT.Description = [[Receiver modification that allows use of the AK pattern side
 
 
 ATT.SortOrder = 0
-ATT.Category = "saa_aks74_stock"
+ATT.Category = "saa_ak_stock"
 
 ATT.SpeedMult = 0.85/0.86
 ATT.ReloadTimeMult = 1.015

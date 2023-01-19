@@ -932,12 +932,17 @@ SWEP.AttachmentElements = {
     },
     ["ak_end"] = {
         Bodygroups = {
-            {7, 9},
+            {7, 10},
         },
     },
     ["ak_brack"] = {
         Bodygroups = {
-            {7, 10},
+            {7, 11},
+        },
+    },
+    ["akms_stock"] = {
+        Bodygroups = {
+            {7, 2},
         },
     },
 

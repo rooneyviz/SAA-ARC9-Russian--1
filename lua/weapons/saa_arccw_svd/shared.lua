@@ -257,7 +257,7 @@ SWEP.BarrelLength = 34
 
 -- Ironsights / Customization / Poses --
 SWEP.IronSights = {
-    Pos = Vector(-2.025, -2, 0.55),
+    Pos = Vector(-2.75, -2, 1.75),
     Ang = Angle(0, -0.15, 0),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(-1, -7, -4),
@@ -663,7 +663,7 @@ SWEP.Attachments = {
         Category = {"saa_54r_muz"},
         InstalledElements = {"muzzleattached"},
         Bone = "b_wpn",
-        Pos = Vector(0, 23.2*1.1, 0.35*1.1),
+        Pos = Vector(0.5, 15.25*1.1, 1.5*1.1),
         Ang = Angle(0, -90, 0),
         Scale = 0.76,
     },
@@ -671,7 +671,7 @@ SWEP.Attachments = {
         PrintName = "Handguard",
         Category = {"saa_svd_handguard"},
         Bone = "b_wpn",
-        Pos = Vector(0, 10, 1),
+        Pos = Vector(0, 1, 1),
         Ang = Angle(0, 270, 0),
         Scale = 1,
     },
@@ -695,7 +695,7 @@ SWEP.Attachments = {
         PrintName = "Underbarrel",
         Category = {"saa_svd_underbarrel", "SAA_FOREGRIP_RAIL"},
         Bone = "b_wpn",
-        Pos = Vector(0, 6.8*1.1, -0.6*1.1),
+        Pos = Vector(0.3, 2*1.1, 1*1.1),
         Ang = Angle(0, 270, 180),
         Scale = 1,
     },
@@ -704,7 +704,7 @@ SWEP.Attachments = {
         Category = {"SAA_SVD_DOVETAIL"},
         ExcludeElements = {"nodovetailoptics"},
         Bone = "b_wpn",
-        Pos = Vector(0, -2.5*1.1, 1*1.1),
+        Pos = Vector(1.3, -7.75, 1.3),
         Ang = Angle(0, 270, 0),
         Scale = .76,
     },
@@ -712,7 +712,7 @@ SWEP.Attachments = {
         PrintName = "Dustcover",
         Category = {"SAA_SVD_DUSTCOVER"},
         Bone = "b_wpn",
-        Pos = Vector(0.1, 1.3, 1),
+        Pos = Vector(0, -10,2),
         Ang = Angle(0, 270, 0),
         Scale = 1,
     },
@@ -720,7 +720,7 @@ SWEP.Attachments = {
         PrintName = "Stock",
         Category = {"saa_svd_stock"},
         Bone = "b_wpn",
-        Pos = Vector(0.7, -4, -0.1),
+        Pos = Vector(0.5, -20, -0.1),
         Ang = Angle(0, 270, 0),
         Scale = 1,
     },
@@ -728,7 +728,7 @@ SWEP.Attachments = {
         PrintName = "magazine",
         Category = {"saa_svd_mag"},
         Bone = "b_wpn_mag",
-        Pos = Vector(0, 0, -4),
+        Pos = Vector(0, 0, -2),
         Ang = Angle(0, 00, 0),
         Scale = 1,
     },
@@ -774,6 +774,12 @@ SWEP.AttachmentElements = {
            {2, 1},
        },
    },
+   ["svd_mlokhandguard"] = {
+       Bodygroups = {
+           {2, 2},
+       },
+   },
+
    ["svds_dc"] = {
        Bodygroups = {
            {6, 1},
@@ -791,7 +797,7 @@ SWEP.AttachmentElements = {
        },
         AttPosMods = {
             [1] = {
-                Pos = Vector(0, 24.8, 0.6),
+        Pos = Vector(0.5, 15.32, 1.7),
             }
         },
    },
