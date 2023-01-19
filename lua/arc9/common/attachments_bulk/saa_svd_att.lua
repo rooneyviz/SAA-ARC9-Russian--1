@@ -186,6 +186,6 @@ ATT.AimDownSightsTimeMult = 0.995
 
 ATT.ActivateElements = {"svd_mlokhandguard"}
 
-ARC9.LoadAttachment(ATT, "saa_svd_mguard")
+ARC9.LoadAttachment(ATT, "saa_svd_mlokguard")
 
 
