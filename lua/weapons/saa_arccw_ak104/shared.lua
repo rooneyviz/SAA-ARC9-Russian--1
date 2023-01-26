@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
-SWEP.Category = "SAA - ARC9"
+SWEP.Category = "ARC9 - SAA"
 SWEP.AdminOnly = false
 SWEP.UseHands = true
 
@@ -368,7 +368,7 @@ SWEP.Hook_TranslateAnimation = function (self, anim)
         if self:GetUBGL() then
             suffix = "_glsetup"
         end
-    elseif attached["drum_73"] then
+    elseif attached["drum_75"] then
         suffix = "_drum"
     else
         suffix = ""

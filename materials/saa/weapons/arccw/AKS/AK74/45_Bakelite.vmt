@@ -1,8 +1,8 @@
 "VertexLitGeneric"
-{
 	"$basetexture"				"saa\weapons\arccw\AKS\AK74\textures\magazines\RPK74_Mag_d"
 	"$bumpmap"					"saa\weapons\arccw\AKS\AK74\textures\magazines\RPK74_Mag_n"
 	"$phongexponenttexture"		"saa\weapons\arccw\AKS\AK74\textures\magazines\RPK74_Mag_e"
+
 	"$phongwarptexture"			"models\weapons\saa\shared\phongwarp_metal"
 	"$color2"					"[0.75 0.75 0.75]"
 
