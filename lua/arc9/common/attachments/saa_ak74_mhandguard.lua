@@ -1,3 +1,5 @@
+ATT = {}
+
 ATT.PrintName = "74 Plum Handguard"
 ATT.CompactName = "Plum"
 ATT.Description = [[Polymer based handguard produced in the later years of the soviet union, slightly increases heat capacity at the cost of a slower dissipation all the while increasing recoil and aim control.]]
@@ -13,3 +15,4 @@ ATT.HeatDissipationMult = 0.8
 ATT.SwayMult = 0.7
 
 ATT.ActivateElements = {"ak74m_handguard"}
+ARC9.LoadAttachment(ATT, "saa_ak74_hg")

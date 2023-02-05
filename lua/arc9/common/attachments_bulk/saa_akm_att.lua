@@ -3,6 +3,21 @@ local ATT = {}
 --dust cover
 
 -- start here
+ATT = {}
+
+ATT.PrintName = "AK stock pad"
+ATT.CompactName = "pads"
+ATT.Description = [[a pad that covers the back of the stock to ease the recoil of a gun.]]
+ATT.Icon = Material("hud/arc9_saa/rus/buttpad.png", "mips smooth")
+ATT.Model = "saa/upgrades/v_butt_pad.mdl"
+ATT.SortOrder = 0
+ATT.Category = "saa_ak_pad"
+
+ATT.RecoilMult = 0.9
+ATT.ErgonomicsAdd= -1
+
+ARC9.LoadAttachment(ATT, "saa_ak_pad")
+
 
 ATT = {}
 
@@ -63,7 +78,7 @@ ATT.PrintName = "Zenitco Alpha AK Dustcover"
 ATT.CompactName = "Zenit Alpha Cover"
 ATT.Description = [[Dust cover produced by private companies to allow mainly reflex sight usage. Is not fitted for long range optics.]]
 ATT.Pros = {"Allows for Picatinny Railed Optic use"}
-
+ATT.Icon = Material("hud/arc9_saa/rus/alpha_cover.png", "mips smooth")
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_dustcover"
 
@@ -98,7 +113,7 @@ ATT.PrintName = "Herax Railed AK Dustcover"
 ATT.CompactName = "Herax Cover"
 ATT.Description = [[Dust cover produced by private companies to allow mainly reflex sight usage. Conflicts with rear ironsights.]]
 ATT.Pros = {"Allows for Picatinny Railed Optic use"}
-
+ATT.Icon = Material("hud/arc9_saa/rus/AMGP_cover.png", "mips smooth")
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_dustcover"
 ATT.IronSightsOverride = {
@@ -214,7 +229,7 @@ ATT = {}
 ATT.PrintName = "Zenitco RK-3 Grip"
 ATT.CompactName = "RK-3"
 ATT.Description = [[Polymer pistol grip built by private companies with ergonomics in mind. Padded internals give it a sturdier yet heavier consistency, reducing felt recoil.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/RK3_pg.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_pgrip"
@@ -234,7 +249,7 @@ ATT = {}
 ATT.PrintName = "Magpul Pistol Grip"
 ATT.CompactName = "MGP"
 ATT.Description = [[Polymer pistol grip built by private companies with ergonomics in mind.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/mgp_pg.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_pgrip"
@@ -275,7 +290,7 @@ ATT = {}
 ATT.PrintName = "AK Izhevsk Wood Pistol Grip"
 ATT.CompactName = "AK Wood"
 ATT.Description = [[Early AK Wooden Pistol Grip. Sturdy but great for main hand recoil control.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/Wood_PG.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_pgrip"
@@ -297,7 +312,7 @@ ATT = {}
 ATT.PrintName = "Zenitco Alpha-L Handguard"
 ATT.CompactName = "Alpha-L"
 ATT.Description = [[Handguard produced by private companies. Fitted with a sleek steel design, allows for a quicker heat dissipation and underbarrel attachments at the cost of a higher recoil.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/Alpha_handguard.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_hg"
@@ -356,7 +371,7 @@ ATT = {}
 ATT.PrintName = "Zenitco B-11 Handguard"
 ATT.CompactName = "B-11"
 ATT.Description = [[Handguard produced by private companies. Fitted with a sleek steel design, allows for a quicker heat dissipation and underbarrel attachments at the cost of a higher recoil.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/b11.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_hg"
@@ -377,6 +392,14 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
         Scale = 1
     },
+    {
+        PrintName = "Right Tactical",
+        Category = {"saa_rail_tactical"},
+        Pos = Vector(1.05, 2., 0.35),
+        Ang = Angle(0, 270, 90),
+        Icon_Offset = Vector(0, 0, 0),
+        Scale = 0.8
+    },
 }
 
 
@@ -391,7 +414,7 @@ ATT = {}
 ATT.PrintName = "Magpul Handguard"
 ATT.CompactName = "MGP"
 ATT.Description = [[Handguard produced by private companies. Eases aim and .]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/mgp_handguard.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_hg"
@@ -467,6 +490,37 @@ ATT.Attachments = {
 
 
 ARC9.LoadAttachment(ATT, "saa_ak_s100hg")
+
+-- end here
+ATT = {}
+
+ATT.PrintName = "Series-100 Handguard railed version"
+ATT.CompactName = "Series-100"
+ATT.Description = [[Handguard produced by private companies. Eases aim and .]]
+ATT.Icon = Material("hud/arc9_saa/rus/ak74_hg.png", "mips smooth")
+
+
+ATT.SortOrder = 1
+ATT.Category = "saa_ak_polyhg"
+ATT.Sway = 0.75
+ATT.RecoilMult = 0.965
+ATT.SprintToFireTimeMult = 1.1
+ATT.ActivateElements = {"s100rail_handguard"}
+
+ATT.Attachments = {
+        {
+        PrintName = "Underbarrel",
+        Category = {"SAA_FOREGRIP"},
+        Pos = Vector(0, 0, 1.),
+        Ang = Angle(0, 270, 180),
+        Icon_Offset = Vector(0, 0, 0),
+        Scale = 1
+    },
+
+}
+
+
+ARC9.LoadAttachment(ATT, "saa_ak_s100railhg")
 
 -- end here
 
@@ -593,7 +647,7 @@ ATT = {}
 ATT.PrintName = "7.62x39mm 75 Round Drum Magazine"
 ATT.CompactName = "75 DRUM"
 ATT.Description = [[Popular 75 round design mag mostly used in RPK support rifles. Notably prone to misfeeding jams and logically heavy.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/AKM_75rnd.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "saa_akm_mag"
@@ -615,7 +669,7 @@ ATT = {}
 ATT.PrintName = "7.62x39mm 30 Round Bakelite Magazine"
 ATT.CompactName = "BKL"
 ATT.Description = [[Bakelite Magazine produced in the later years of the cold war. Comes at an easier reload drill and lower weight with a simpler structure that causes the shooter to feel a heavier horizontal recoil.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/AKM_30rnd.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "saa_akm_mag"
@@ -639,7 +693,7 @@ ATT.PrintName = "7.62x39mm 20 Round Steel Magazine"
 ATT.CompactName = "20-RND"
 ATT.Description = [[Lower-Capacity Steel Magazine produced for Civilian usage. 
 Commonly Found in Sporter type rifles such as VPOs and SKS, this magazine can only allot up to 20 rounds, rendering it a lighter choice for quicker reloading speeds.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/AKM_20rnd.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "saa_akm_mag"
@@ -662,7 +716,7 @@ ATT = {}
 ATT.PrintName = "7.62x39mm 35 Round PMAG Magazine"
 ATT.CompactName = "35-PMAG"
 ATT.Description = [[35-Round Capacity Magpul Magazine produced by private companies. Comes at an easier reload drill and lower weight with a simpler structure that causes the shooter to feel a heavier horizontal recoil.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/pmag_30rnd.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "saa_akm_mag"
@@ -685,7 +739,7 @@ ATT = {}
 ATT.PrintName = "7.62x39mm 40 Round Steel Magazine"
 ATT.CompactName = "40 STL"
 ATT.Description = [[Classic Steel Magazine produced for sustained fire. Jams more easily but offers 10 extra rounds compared to the standard issue ones.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/AKM_40rnd.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "saa_akm_mag"
@@ -709,7 +763,7 @@ ATT = {}
 ATT.PrintName = "Magpul Stock"
 ATT.CompactName = "MGP"
 ATT.Description = [[Polymer stock built by private companies.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/mgp_stock1.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_stock"
@@ -733,7 +787,7 @@ ATT = {}
 ATT.PrintName = "Series-100 Polymer Stock"
 ATT.CompactName = "S-100"
 ATT.Description = [[Polymer stock built by private companies.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/S100_STOCK.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_stock"
@@ -781,7 +835,7 @@ ATT = {}
 ATT.PrintName = "Helix AS-2 Stock"
 ATT.CompactName = "Helix"
 ATT.Description = [[Multi-stage tube stock with buffer adaptor for AKs. Dampens recoil and eases aim control with a relatively complex surface that renders aiming down sights and running more difficult]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/Alpha_Stock.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_stock"
@@ -837,7 +891,7 @@ ATT.Icon = Material("hud/arc9_saa/rus/ak74_stock.png", "mips smooth")
 
 
 ATT.SortOrder = 1
-ATT.Category = "saa_ak74stock"
+ATT.Category = "saa_ak_stock"
 ATT.Sway = 0.9
 ATT.SpeedMult = 0.855/0.91
 ATT.ReloadTimeMult = 1.03
@@ -847,6 +901,18 @@ ATT.AimDownSightsTimeMult = 1.2
 ATT.RecoilMultSights = 0.6
 
 ATT.ActivateElements = {"ak74_stock"}
+ATT.Attachments = {
+
+    {
+        PrintName = "Stock pad",
+        Category = {"saa_ak_pad"},
+        Installed = nil ,
+        Bone = "b_wpn",
+        Pos = Vector(0, -14*1.1, 0),
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+    },
+}
 
 ARC9.LoadAttachment(ATT, "saa_ak_ak74stock")
 
@@ -883,7 +949,7 @@ ATT = {}
 ATT.PrintName = "AKS Sidefolder Stock"
 ATT.CompactName = "AKS"
 ATT.Description = [[Receiver modification that allows use of the AK pattern sidefolder stock. Perfect for a mobility oriented build that seeks for ease of use in CQB.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/aks74.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "saa_ak_stock"
@@ -942,7 +1008,7 @@ ATT = {}
 ATT.PrintName = "AK-74M Sidefolder Stock"
 ATT.CompactName = "AK-74M"
 ATT.Description = [[Receiver modification that allows use of the AK pattern sidefolder stock. Perfect for a mobility oriented build that seeks for ease of use in CQB.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/aks74m.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "saa_ak_stock"
@@ -954,6 +1020,18 @@ ATT.RecoilMultSights = 0.845
 
 ATT.ActivateElements = {"aks74m_stock"}
 
+ATT.Attachments = {
+
+    {
+        PrintName = "Stock pad",
+        Category = {"saa_ak_pad"},
+        Installed = nil ,
+        Bone = "b_wpn",
+        Pos = Vector(0, -14*1.1, 0),
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+    },
+}
 ARC9.LoadAttachment(ATT, "saa_aks74m")
 
 -- end here
@@ -965,7 +1043,7 @@ ATT = {}
 ATT.PrintName = "Alpha Rail Gas Port"
 ATT.CompactName = "Alpha"
 ATT.Description = [[Gas port produced by private companies. Longer design allowing for railed accessories to be attached. Its sleek yet elongated aluminum structure enhances the heat capacity and dissipation.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/alpha_gasport.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_gp"
@@ -1000,7 +1078,38 @@ ATT.Attachments = {
 ARC9.LoadAttachment(ATT, "saa_ak_alphagp")
 
 -- end here
+ATT = {}
 
+ATT.PrintName = "Zenitco B-19 Gas Port"
+ATT.CompactName = "B-19"
+ATT.Description = [[Gas port produced by private companies. Its sleek aluminum structure enhances the heat capacity and dissipation.]]
+ATT.Icon = Material("hud/arc9_saa/rus/b19.png", "mips smooth")
+
+
+ATT.SortOrder = 1
+ATT.Category = "saa_ak_gp"
+ATT.Sway = 1.065
+ATT.SprintToFireTimeMult = 1.05
+ATT.RecoilMult = 0.985
+ATT.HeatCapacityMult = 1.225
+ATT.HeatDissipationMult = 1.15
+ATT.Cons = {"Using a Top Barrel attachment might render aiming", "down sights difficult. High-Profile Optics are ", "very recommended."}
+ATT.ActivateElements = {"b19_gasport"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Top Barrel",
+        Category = { "saa_rail_tactical", "SAA_SCOPE_XS"},
+        Pos = Vector(-0.225, 0, -0.3),
+        Ang = Angle(0, 270, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        Scale = 0.9
+    },
+}
+
+ARC9.LoadAttachment(ATT, "saa_ak_b19")
+
+-- end here
 -- start here
 
 ATT = {}
@@ -1008,7 +1117,7 @@ ATT = {}
 ATT.PrintName = "Magpul Gas Port"
 ATT.CompactName = "MGP"
 ATT.Description = [[Handguard produced by private companies. Reduces forward weight.]]
-
+ATT.Icon = Material("hud/arc9_saa/rus/mgp_gp.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "saa_ak_gp"
@@ -1172,3 +1281,52 @@ ATT.Attachments = {
 ARC9.LoadAttachment(ATT, "saa_akmn")
 
 -- end here
+ATT = {}
+
+ATT.PrintName = "ZenitCo RP-1 Extended Charging handle"
+ATT.CompactName = "RP-1"
+ATT.Description = [[Extended charging handle produced by private companies. Fitted with a sleek steel design, allows for a quicker reload]]
+
+
+ATT.SortOrder = 0
+ATT.Category = "saa_ak_charge"
+
+ATT.ReloadTimeMult = 0.9
+
+
+ATT.ActivateElements = {"zenit_chargehandle"}
+
+ARC9.LoadAttachment(ATT, "saa_ak_zenit_charge")
+
+-- end here
+ATT = {}
+
+ATT.PrintName = "Double star AK AR-type pistol grip adapter "
+ATT.CompactName = "ar15 adaptor"
+
+ATT.Description = [[An adapter that allows AR-type pistol grips installation on AK pattern rifles.]]
+ATT.Icon = Material("hud/arc9_saa/rus/ak_adaptor.png", "mips smooth")
+ATT.SortOrder = 0
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
+ATT.Category = {"saa_ak_pgrip"}
+ATT.ActivateElements = {"adaptor"}
+ATT.Attachments = {
+    {
+        PrintName = "AR Grip",
+        -- Category = "eft_ar15_pgrip_flat",
+        Category = "eft_ar15_pgrip",
+        Pos = Vector(0, .50, -.87),
+        Ang = Angle(0, -90, 0),
+        Scale = 0.975
+    },
+}
+ARC9.LoadAttachment(ATT, "saa_ak_adaptor")
+
+-- end here
+-- start here
+-- start here
+
+
