@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
-SWEP.Category = "SAA - ARC9"
+SWEP.Category = "ARC9 - SAA"
 SWEP.AdminOnly = false
 SWEP.UseHands = true
 
@@ -389,12 +389,27 @@ local mechtable = {
     mech .. "6.wav",
 }
 
+SWEP.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    local suffix = ""
+
+    if self:GetJammed() then suffix = "_empty"
+    else suffix = ""
+    end
+
+    return anim .. suffix
+end
+
+
 SWEP.Animations = {
     ["draw"] = {
         Source = "ACT_VM_DRAW",
         EventTable = {
             {s = "saa/ak2022/ak47_rattle_nvr.wav",    t = 0},
             {s = "saa/ak2022/ak47_rattle.wav",    t = 0.1, v = 0.3,},
+        Mult = 0.5 ,
+
         },
     },
     ["holster"] = {
@@ -419,9 +434,7 @@ SWEP.Animations = {
     ["idle_empty"] = {
         Source = "empty_idle",
     },
-    ["idle_jammed"] = {
-        Source = "empty_idle",
-    },
+
     ["firemode_1"] = {
         Source = "base_fireselect",
         MinProgress = 1,
@@ -434,7 +447,13 @@ SWEP.Animations = {
         Source = "base_idle",
         EventTable = {
            },
-    },
+	},
+	["trigger_empty"] = {
+        Source = "empty_idle",
+        EventTable = {
+           },
+    },	   
+  
     ["fire"] = {
         Source = "ACT_VM_PRIMARYATTACK",
         ShellEjectAt = 0.01,

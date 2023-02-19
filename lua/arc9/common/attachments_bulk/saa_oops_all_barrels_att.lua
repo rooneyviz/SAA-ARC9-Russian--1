@@ -2,6 +2,7 @@ local ATT = {}
 ATT = {}
 
 ATT.PrintName = "7.62x39mm 12.4 inch Barrel"
+ATT.CompactName = "12.4 inch"
 ATT.Description = [[Coming in with the Kalashnikov Century Program, the AK-104 offers the AKM's firepower and purpose to a compact package, featuring a shorter 12.4 barrel and a slightly greater rate of fire]]
 ATT.SpeedMult = 1.04705882
 ATT.HeatDelayTimeMult = 0.4
@@ -41,7 +42,7 @@ ATT.Attachments = {
 		{
         PrintName = "Muzzle",
         Category = "saa_m43_muz",
-        Pos = Vector(-11.05*1.1, 0, 0),
+        Pos = Vector(-11.1*1.1, 0, 0),
         Ang = Angle(0, 0, 0),
         Scale = 0.975
 		},
@@ -52,6 +53,8 @@ ARC9.LoadAttachment(ATT, "saa_ak_762sbarrel")
 ATT = {}
 
 ATT.PrintName = "5.45x39mm 12.4 inch Barrel"
+ATT.CompactName = "12.4 inch"
+
 ATT.Description = [[Coming in with the Kalashnikov Century Program, the AK-105 offers the AK74M's firepower and purpose to a compact package, featuring a shorter 12.4 barrel and a slightly greater rate of fire]]
 ATT.SpeedMult = 1.04705882
 ATT.HeatDelayTimeMult = 0.4
@@ -103,6 +106,8 @@ ARC9.LoadAttachment(ATT, "saa_ak_545sbarrel")
 ATT = {}
 
 ATT.PrintName = "5.56x45mm 12.4 inch Barrel"
+ATT.CompactName = "12.4 inch"
+
 ATT.Description = [[Coming in with the Kalashnikov Century Program, the AK-102 offers the AK101's firepower and purpose to a compact package, featuring a shorter 12.4 barrel and a slightly greater rate of fire]]
 ATT.SpeedMult = 1.04705882
 ATT.HeatDelayTimeMult = 0.4
@@ -152,6 +157,8 @@ ARC9.LoadAttachment(ATT, "saa_ak_556sbarrel")
 ATT = {}
 
 ATT.PrintName = "7.62x39mm 23.2 inch Barrel"
+ATT.CompactName = "23.2 inch"
+
 ATT.Description = [[an aftermarket 23.2 inch barrel for the ak with the ability to use RPK bipods(THIS DOESNT MAKE YOUR AK INTO AN  RPK)]]
 ATT.SpeedMult = 0.95294118
 ATT.HeatDelayTimeMult = 1.4
@@ -179,6 +186,8 @@ ATT = {}
 ATT = {}
 
 ATT.PrintName = "5.45x39mm 23.2 inch Barrel"
+ATT.CompactName = "23.2 inch"
+
 ATT.Description = [[an aftermarket 23.2 inch barrel for the ak with the ability to use RPK bipods(THIS DOESNT MAKE YOUR AK INTO AN  RPK)]]
 ATT.SpeedMult = 0.95294118
 ATT.HeatDelayTimeMult = 1.4
@@ -204,6 +213,8 @@ ARC9.LoadAttachment(ATT, "saa_ak_545lbarrel")
 ATT = {}
 
 ATT.PrintName = "5.45x45mm 23.2 inch Barrel"
+ATT.CompactName = "23.2 inch"
+
 ATT.Description = [[an aftermarket 23.2 inch barrel for the ak with the ability to use RPK bipods(THIS DOESNT MAKE YOUR AK INTO AN  RPK)]]
 ATT.SpeedMult = 0.95294118
 ATT.HeatDelayTimeMult = 1.4
@@ -229,6 +240,8 @@ ARC9.LoadAttachment(ATT, "saa_ak_556lbarrel")
 ATT = {}
 
 ATT.PrintName = "5.56x45mm 10.5 inch draco Barrel "
+ATT.CompactName = "10.5 inch"
+
 ATT.Description = [[Coming from the romanian cugir arms factory, this 10.5 inch "draco" barrel offers the AK101's firepower and purpose to a compact package, featuring a shorter 10.5 barrel and a slightly greater rate of fire]]
 ATT.SpeedMult = 1.07058823
 ATT.HeatDelayTimeMult = 0.28
@@ -276,6 +289,8 @@ ARC9.LoadAttachment(ATT, "saa_ak_556dbarrel")
 ATT = {}
 
 ATT.PrintName = "5.45x39mm 10.5 inch draco Barrel "
+ATT.CompactName = "10.5 inch"
+
 ATT.Description = [[Coming from the romanian cugir arms factory, this 10.5 inch "draco" barrel offers the AK74's firepower and purpose to a compact package, featuring a shorter 10.5 barrel and a slightly greater rate of fire]]
 ATT.SpeedMult = 1.07058823
 ATT.HeatDelayTimeMult = 0.28
@@ -323,6 +338,8 @@ ARC9.LoadAttachment(ATT, "saa_ak_545dbarrel")
 ATT = {}
 
 ATT.PrintName = "7.62x39mm 10.5 inch draco Barrel "
+ATT.CompactName = "10.5 inch"
+
 ATT.Description = [[Coming from the romanian cugir arms factory, this 10.5 inch "draco" barrel offers the AKm's firepower and purpose to a compact package, featuring a shorter 10.5 barrel and a slightly greater rate of fire]]
 ATT.SpeedMult = 1.07058823
 ATT.HeatDelayTimeMult = 0.28
@@ -370,6 +387,8 @@ ARC9.LoadAttachment(ATT, "saa_ak_dbarrel")
 ATT = {}
 
 ATT.PrintName = "7.62x39mm 13.6 inch Barrel"
+ATT.CompactName = "13.6 inch"
+
 ATT.Description = [[attachment for the pp19 vityaz that i made usable on other ak's for shits and giggles]]
 ATT.SpeedMult = 1.04705882
 ATT.HeatDelayTimeMult = 0.4
@@ -413,6 +432,8 @@ ARC9.LoadAttachment(ATT, "saa_ak_762saigabarrel")
 ATT = {}
 
 ATT.PrintName = "5.45x39mm 13.6 inch Barrel"
+ATT.CompactName = "13.6 inch"
+
 ATT.Description = [[attachment for the pp19 vityaz that i made usable on other ak's for shits and giggles]]
 ATT.SpeedMult = 1.04705882
 ATT.HeatDelayTimeMult = 0.4
@@ -457,6 +478,8 @@ ARC9.LoadAttachment(ATT, "saa_ak_545saigabarrel")
 ATT = {}
 
 ATT.PrintName = "5.56x45mm 13.6 inch Barrel"
+ATT.CompactName = "13.6 inch"
+
 ATT.Description = [[attachment for the pp19 vityaz that i made usable on other ak's for shits and giggles]]
 ATT.SpeedMult = 1.04705882
 ATT.HeatDelayTimeMult = 0.4

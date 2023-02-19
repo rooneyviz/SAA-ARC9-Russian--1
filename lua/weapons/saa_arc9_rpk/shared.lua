@@ -372,7 +372,7 @@ SWEP.Hook_TranslateAnimation = function (self, anim)
         if self:GetUBGL() then
             suffix = "_glsetup"
         end
-    elseif attached["drum_75"] then
+    elseif attached["d_anim"] then
         suffix = "_drum"
     else
         suffix = ""
@@ -828,6 +828,8 @@ SWEP.Attachments = {
         PrintName = "Gas Port",
         Category = "saa_ak_gp",
         Installed = "saa_ak_akmgp",
+        ExcludeElements = {"block_gp"},
+
         Bone = "b_wpn",
         Pos = Vector(0, 6*1.1, 1.5*1.1),
         Ang = Angle(0, 0, 0),
@@ -855,7 +857,15 @@ SWEP.Attachments = {
         PrintName = "charging handle",
         Category = {"saa_ak_charge"},
         Bone = "b_wpn",
-        Pos = Vector(0, -2.8, 2),
+        Pos = Vector(-2, 1.5, 0.75 ),
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+    },
+    {
+        PrintName = "magwell",
+        Category = "saa_ak_flare",
+        Bone = "b_wpn_mag",
+        Pos = Vector(0, -0.2*1.1, 2.25*1.1),
         Ang = Angle(0, 0, 0),
         Scale = 1,
     },
@@ -865,7 +875,7 @@ SWEP.Attachments = {
         Category = {"saa_ak_stock", "saa_akm_stock"},
         Installed = "saa_ak_akmstock",
         Bone = "b_wpn",
-        Pos = Vector(0, -7.3*1.1, 0),
+        Pos = Vector(0, -7.025*1.1, .085),
         Ang = Angle(0, 0, 0),
         Scale = 1,
     },
@@ -1130,9 +1140,19 @@ SWEP.AttachmentElements = {
             {5, 5},
         },
     },
-    ["s100rail_handguard"] = {
+    ["vltor"] = {
         Bodygroups = {
             {4, 9},
+        },
+    },
+    ["flare"] = {
+        Bodygroups = {
+            {14, 1},
+        },
+    },
+    ["saa_akm_73"] = {
+        Bodygroups = {
+            {11, 6},
         },
     },
 

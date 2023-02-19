@@ -42,6 +42,25 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
         Scale = 1,
     },
+{
+        PrintName = "EFT OPTIC",
+        Category = {"eft_optic_medium", "eft_optic_small", "eft_optic_large"},
+        Pos = Vector(-1, -.56, -1.1),
+        ExcludeElements = {"nodustcovereftoptics"},
+        InstalledElements = {"nodovetailoptics", "norearsightoptics","nodustcoveroptics","nodustcoverirons"},
+        Ang = Angle(0, 0, 0),
+        Scale = 0.9,
+    },
+{
+        PrintName = "iron sights",
+        Category = {"eft_rearsight","eft_ar_rearsight"},
+        Pos = Vector(-3, -.56, -1.1),
+        ExcludeElements = {"nodustcoverirons"},
+        InstalledElements = {"nodovetailoptics", "norearsightoptics","nodustcoveroptics","nodustcovereftoptics"},
+        Ang = Angle(0, 0, 0),
+        Scale = 0.9,
+    },
+
 }
 
 ATT.ActivateElements = {"svds_dc"}

@@ -775,7 +775,15 @@ SWEP.Attachments = {
         PrintName = "charging handle",
         Category = {"saa_ak_charge"},
         Bone = "b_wpn",
-        Pos = Vector(0, -2.8, 2),
+        Pos = Vector(-2, 1.5, 0.75 ),
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+    },
+    {
+        PrintName = "magwell",
+        Category = "saa_ak_flare",
+        Bone = "b_wpn_mag",
+        Pos = Vector(0, -0.2*1.1, 2.25*1.1),
         Ang = Angle(0, 0, 0),
         Scale = 1,
     },
@@ -840,6 +848,8 @@ SWEP.Attachments = {
         PrintName = "Gas Port",
         Category = "saa_ak_gp",
         Installed = "saa_ak_74ngp",
+        ExcludeElements = {"block_gp"},
+
         Bone = "b_wpn",
         Pos = Vector(0, 6*1.1, 1.5*1.1),
         Ang = Angle(0, 0, 0),
@@ -1147,9 +1157,14 @@ SWEP.AttachmentElements = {
             {5, 5},
         },
     },
-    ["s100rail_handguard"] = {
+    ["vltor"] = {
         Bodygroups = {
             {4, 9},
+        },
+    },
+    ["flare"] = {
+        Bodygroups = {
+            {14, 1},
         },
     },
 

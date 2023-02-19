@@ -781,6 +781,22 @@ SWEP.Attachments = {
 
         Scale = 0.8,
     },
+    {
+        PrintName = "charging handle",
+        Category = {"saa_ak_charge"},
+        Bone = "b_wpn",
+        Pos = Vector(-2, 1.5, 0.75 ),
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+    },
+    {
+        PrintName = "magwell",
+        Category = "saa_ak_flare",
+        Bone = "b_wpn_mag",
+        Pos = Vector(0, -0.2*1.1, 2.25*1.1),
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+    },
 
     {
         PrintName = "Gas Tube Clamp",
@@ -832,6 +848,8 @@ SWEP.Attachments = {
         PrintName = "Gas Port",
         Category = "saa_ak_gp",
         Installed = "saa_ak_74ngp",
+        ExcludeElements = {"block_gp"},
+
         Bone = "b_wpn",
         Pos = Vector(0, 6*1.1, 1.5*1.1),
         Ang = Angle(0, 0, 0),
@@ -872,6 +890,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Scale = 1,
     },
+
     {
         PrintName = "Underbarrel",
         Category = {"SAA_GP25"},
@@ -1157,12 +1176,27 @@ SWEP.AttachmentElements = {
             {5, 5},
         },
     },
-    ["s100rail_handguard"] = {
+    ["vltor"] = {
         Bodygroups = {
             {4, 9},
         },
     },
+    ["saiga_10"] = {
+        Bodygroups = {
+            {11, 6},
+        },
+    },
+    ["no_mag"] = {
+        Bodygroups = {
+            {11, 7},
+        },
+    },
 
+    ["flare"] = {
+        Bodygroups = {
+            {14, 1},
+        },
+    },
     ["zenit_chargehandle"] = {
         Bodygroups = {
             {1, 1},

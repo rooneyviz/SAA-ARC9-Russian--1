@@ -8,7 +8,7 @@ ATT = {}
 
 ATT.PrintName = "ATI Montecarlo Polymer Stock"
 ATT.CompactName = "ATI Stock"
-ATT.Description = [[Mosin Polymer furniture piece used in modern hunting and civilian variants.]]
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description   = [[Mosin Polymer furniture piece used in modern hunting and civilian variants.]]
 
 
 ATT.SortOrder = 2
@@ -28,7 +28,7 @@ ATT = {}
 
 ATT.PrintName = "Mosin Nagant 91/30 Sniper Stock"
 ATT.CompactName = "MN91/30 Sniper"
-ATT.Description = [[Wooden stock with side slot. Leaves space for Receiver-Mounted optics.]]
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description   = [[Wooden stock with side slot. Leaves space for Receiver-Mounted optics.]]
 
 
 ATT.SortOrder = 0
@@ -60,7 +60,7 @@ ATT = {}
 
 ATT.PrintName = "M38 Generalized Carbine Stock"
 ATT.CompactName = "M38 Carbine"
-ATT.Description = [[Early World War II production Stock. Features a shorter design, with side slot included.]]
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description   = [[Early World War II production Stock. Features a shorter design, with side slot included.]]
 ATT.AimDownSightsTimeMult = 0.65
 
 
@@ -90,7 +90,7 @@ ARC9.LoadAttachment(ATT, "saa_mosin_carbine")
 ATT = {}
 
 ATT.PrintName = "Obrez Stock"
-ATT.Description = [[Stock that's had many sides sawn off for mobility purposes.]]
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description   = [[Stock that's had many sides sawn off for mobility purposes.]]
 ATT.AimDownSightsTimeMult = 0.45
 
 
@@ -123,7 +123,7 @@ ATT = {}
 
 ATT.PrintName = "Mosin Rear Sight"
 ATT.CompactName = "Mosin RS"
-ATT.Description = [[Rear Sight employed onto targets of all ranges.]]
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description   = [[Rear Sight employed onto targets of all ranges.]]
 
 
 ATT.SortOrder = 0
@@ -144,7 +144,7 @@ ATT = {}
 
 ATT.PrintName = "TOZ TacRail Rear Sight"
 ATT.CompactName = "TOZ Tac RS"
-ATT.Description = [[Optic rail that takes advantage of the Mosin's rear sight structure. Allows for Optics of all ranges to be mounted.]]
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description   = [[Optic rail that takes advantage of the Mosin's rear sight structure. Allows for Optics of all ranges to be mounted.]]
 
 
 ATT.SortOrder = 0
@@ -166,7 +166,7 @@ ATT = {}
 
 ATT.PrintName = [[514" Carbine Barrel]]
 ATT.CompactName = [[514" Barrel]]
-ATT.Description = [[Shorter Barrel used in carbine models. Found in some sporting variants as well.]]
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description   = [[Shorter Barrel used in carbine models. Found in some sporting variants as well.]]
 
 
 ATT.SortOrder = 0
@@ -193,7 +193,7 @@ ATT = {}
 
 ATT.PrintName = [[200" Sawn-Off "Obrez" Barrel]]
 ATT.CompactName = [[200" Obrez]]
-ATT.Description = [[Makeshift Sawn-Off Barrel, seemingly part of the Obrez Mosin pattern.]]
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description   = [[Makeshift Sawn-Off Barrel, seemingly part of the Obrez Mosin pattern.]]
 
 
 ATT.SortOrder = 1

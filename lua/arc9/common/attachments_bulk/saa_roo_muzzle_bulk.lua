@@ -24,6 +24,25 @@ ATT.ShootVolumeMult = 130/126.5
 ATT.NoFlash = true
 
 ARC9.LoadAttachment(ATT, "saa_muz_4pc")
+ATT = {}
+
+
+ATT.PrintName = "AKS-74u muzzle brake"
+ATT.CompactName = "aks74u brake"
+ATT.Icon = nil
+ATT.Description = [[flash hider intended for 5.45 usage that comes with the ak74. Reduces muzzle flash .]]
+ATT.Category = {"muzzle","saa_545_muz"}
+ATT.SortOrder = 1 
+
+ATT.MuzzleParticleOverride = "muzzleflash_mp5"
+ATT.Model = "models/saa/upgrades/muzzle/aks74u_brake.mdl"
+ATT.Scale = 1
+ATT.ModelOffset = Vector(.275, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.NoFlash = true
+
+ARC9.LoadAttachment(ATT, "saa_muz_74")
 
 ATT = {}
 

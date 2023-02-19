@@ -8,7 +8,7 @@ ATT = {}
 
 ATT.PrintName = "KS-23M Polymer Pistol Grip Stock"
 ATT.CompactName = "KS-23M"
-ATT.Description = [[Factory Stock produced for later KS-23 carbine models.
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description = [[Factory Stock produced for later KS-23 carbine models.
 Makes the gun lighter and easier to handle, however rising recoil.]]
 ATT.Icon = Material("hud/arc9_saa/rus/ks23m_stock.png", "mips smooth")
 
@@ -42,7 +42,7 @@ ATT = {}
 
 ATT.PrintName = [["M" Type Wire Buttstock]]
 ATT.CompactName = "Wire Butt"
-ATT.Description = [[Buttstock fitted on the KS-23M Pistol grip-type stocks.
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description = [[Buttstock fitted on the KS-23M Pistol grip-type stocks.
 Reduces the side effects of the item it is fixed on.]]
 ATT.Icon = Material("hud/arc9_saa/rus/ks23_wire.png", "mips smooth")
 
@@ -66,7 +66,7 @@ ATT = {}
 
 ATT.PrintName = [[KS-23 510mm Barrel]]
 ATT.CompactName = "510mm Barrel"
-ATT.Description = [[Early models barrel, intended for support in stakeout situations.
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description = [[Early models barrel, intended for support in stakeout situations.
 The higher barrel length helps reduce recoil, not so well as aim control due to boosted forward weight.]]
 ATT.Icon = Material("hud/arc9_saa/rus/ks23_br.png", "mips smooth")
 
@@ -92,7 +92,7 @@ ATT = {}
 
 ATT.PrintName = [[KS-23 Ironsights plate]]
 ATT.CompactName = "KS-23 Irons"
-ATT.Description = [[Ironsight plate to be fixed onto the receiver's roof plate. Allows for special optics attachments.]]
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description = [[Ironsight plate to be fixed onto the receiver's roof plate. Allows for special optics attachments.]]
 ATT.Icon = Material("hud/arc9_saa/rus/ks23_iron.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -121,7 +121,7 @@ ATT = {}
 
 ATT.PrintName = [[KS-23 Clamped PU 3.5X Sniper Scope]]
 ATT.CompactName = "PU Scope"
-ATT.Description = [[Scope with 3.5X magnification, most commonly used on Mosin rifles, yet adapted for this shotgun.]]
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description = [[Scope with 3.5X magnification, most commonly used on Mosin rifles, yet adapted for this shotgun.]]
 --ATT.Icon = Material("hud/arc9_saa/rus/ks23_br.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -164,7 +164,7 @@ ATT = {}
 
 ATT.PrintName = [[23x75mm Flashbang Special Purpose Round]]
 ATT.CompactName = "23x75mm Flash"
-ATT.Description = [[Flashbang round intended for Riot-Suppression purposes void of murder.]]
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description = [[Flashbang round intended for Riot-Suppression purposes void of murder.]]
 ATT.Icon = Material("hud/arc9_saa/rus/ks23_iron.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -208,7 +208,7 @@ ATT = {}
 
 ATT.PrintName = [[23x75mm "Barrikada" Steel Slug]]
 ATT.CompactName = "23x75mm Barrikada"
-ATT.Description = [[Solid-Steel slug purposed for long range targets.]]
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description = [[Solid-Steel slug purposed for long range targets.]]
 ATT.Icon = Material("hud/arc9_saa/rus/ks23_iron.png", "mips smooth")
 
 ATT.SortOrder = 1
