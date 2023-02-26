@@ -8,14 +8,38 @@ Copyright 2022 ShadowRUN 幸運な.
 
 For further information and permission contact [Stalol](https://steamcommunity.com/id/httpsexinternalxff) or [ShadowRUN](https://steamcommunity.com/id/RshaUdowN) on Steam.
 
-DIFFERENCES From Stalols version
+REQUIREMENTS:
+
+this eft prop pack https://steamcommunity.com/sharedfiles/filedetails/?id=2178599577
+
+this shared content https://github.com/Stalol77/SAA-Shared
+
+ARC9 weapons base by artic and more either from steam workshop or github
+
+ARC9 EFT shared content by DARSU from either the steam workshop or github
+
+and obviously
+A copy of Garrys mod(and a computer that fits its requirements)
+DIFFERENCES From Stalols version:
+
 1.ak104 and 105 are attachments
+
 2. DIFFERENT SVD ANIMATIONS(INSURGENCY ANIMS)
+
 3. extended mag for svd and mlok/picatinny handguard
+
 3. AK74 MAGS
-4. More Ak customizabilitu
+
+4. More Ak customizability and attachments
+
 5. SANDSOTMR QUICK RELOAD ANIMS ON THE AKS FOR EMPTY RELOAD
+
 6. RPK's
+
 7. 5.56 ak's
-8. Draco Ak 
+
+8. different ak barrel lengths(draco,ak100 carbine, 23 inch, ETC) 
+
 9. Probably more
+
+10. AKSU series
