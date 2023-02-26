@@ -737,6 +737,35 @@ ARC9.LoadAttachment(ATT, "saa_akm_75_steel")
 -- end here
 
 -- start here
+ATT = {}
+
+ATT.PrintName = "7.62x39mm 30 round AK-100 magazine"
+ATT.CompactName = "30 AK-100"
+
+ATT.MenuCategory = "ARC9 - SAA Attachments" 
+ATT.Description  = [[Lighter magazine designed for the AIMS-74.]]
+ATT.Icon = Material("hud/arc9_saa/rus/AKM_30rnd.png", "mips smooth")
+ATT.SortOrder = 0
+ATT.Model = "models/saa/upgrades/magazines/ak100.mdl"
+ATT.ModelOffset = Vector(2.45, -10*1.1, 5.9*1.1)
+
+ATT.Scale = 1
+ATT.ActivateElements = {"no_mag"}
+ATT.BoneMerge = true
+ATT.Category = {"saa_akm_mag"}
+
+
+ATT.ReloadTimeMult = 0.9134615389
+ATT.RecoilSideMult = 1.133
+ATT.ClipSizeOverride = 30
+ATT.SpeedMult = 1.0947046855
+
+
+
+
+
+
+ARC9.LoadAttachment(ATT, "saa_akm_30_ak100")
 
 ATT = {}
 
@@ -755,7 +784,7 @@ ATT.SpeedMult = 1.075
 
 ATT.ActivateElements = {"bakelite_30"}
 
-ARC9.LoadAttachment(ATT, "saa_akm_30_bak")
+ARC9.LoadAttachment(ATT, "saa_akm_30_bak_BLK")
 
 -- end here
 
@@ -981,6 +1010,7 @@ ATT.Attachments = {
         Installed = nil ,
         Bone = "b_wpn",
         Pos = Vector(-2.05*1.1, -7*1.1, 1.25*1.1),
+
         Ang = Angle(0, 0, 0),
         Scale = 1,
     },
@@ -1071,7 +1101,6 @@ ATT.RecoilMultSights = 0.95
  
 ATT.ActivateElements = {"aks74_stock"}
 
-ARC9.LoadAttachment(ATT, "saa_aks74")
 ATT.ErgonomicsAdd= 0
 ATT.Attachments = {
 
@@ -1085,6 +1114,7 @@ ATT.Attachments = {
         Scale = 1,
     },
 }
+ARC9.LoadAttachment(ATT, "saa_aks74")
 
 -- end here
 -- start here
@@ -1647,5 +1677,369 @@ ATT.ActivateElements = {"saa_akm_73","d_anim"}
 ARC9.LoadAttachment(ATT, "saa_akm_promag_73")
 
 -- end here
+ATT = {}
 
+ATT.PrintName = "Galil stock"
+ATT.CompactName = "Galil stock"
+
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description = [[A Stock from insurgency sandstorm based on the galil stock.]]
+ATT.Icon = Material("hud/arc9_saa/rus/ar_stock.png", "mips smooth")
+ATT.SortOrder = 0
+ATT.Model = "models/saa/upgrades/stock/adapt2.mdl"
+ATT.ModelOffset = Vector(2.45, -2.3*1.1, 3.5*1.1)
+
+ATT.ModelBodygroups = "2"
+BoneMerge = true
+ATT.Scale = 1
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
+ATT.SpeedMult = 0.855/0.86
+ATT.ReloadTimeMult = 1.015
+ATT.RecoilMult = 1/1.2
+ATT.RecoilMultSights = 0.95
+
+ATT.Category = {"saa_ak_stock"}
+ARC9.LoadAttachment(ATT, "saa_ak_stock_galil")
+ATT = {}
+
+ATT.PrintName = "ZenitCO PT lock"
+ATT.CompactName = "pt lock"
+
+ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description = [[The lock is designed to install the PT-1 and PT-3 stocks to a weapon. This model is designed for installation on the AK family of weapons. Manufactured by Zenit.]]
+ATT.Icon = Material("hud/arc9_saa/rus/ar_stock.png", "mips smooth")
+ATT.SortOrder = 0
+ATT.Model = "models/saa/upgrades/stock/ptlock.mdl"
+ATT.ModelOffset = Vector(2.45, -2.59*1.1, 3.22*1.1)
+ATT.Scale = 1
+ATT.BoneMerge = true
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
+ATT.Category = {"saa_ak_stock"}
+ATT.Attachments = {
+{
+        PrintName = "zenitco pt stock",
+        Category = "zenitcostock",
+        Pos = Vector(0, 0, 0),
+        Icon_Offset = Vector(0, -1, 0),
+
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+
+    },
+	
+}
+ARC9.LoadAttachment(ATT, "saa_ak_zenitco_stock_adaptor")
+
+ATT = {}
+
+ATT.PrintName = "ZenitCo pt-1 stock base"
+ATT.CompactName = "pt1 stock base"
+ATT.MenuCategory = "ARC9 - SAA Attachments"
+ ATT.Description = [[The telescopic PT-1 stock is mounted on the standard place of the stock AK 103, 104, 105, 74M, AKS74U and PP Vityaz, has a length adjustment mechanism and an adjustable cheek. A special lock is required for installation.]]
+ATT.Icon = Material("hud/arc9_saa/rus/akm_dc.png", "mips smooth")
+
+
+ATT.SortOrder = 0
+ATT.Category = "zenitcostock"
+ATT.Model = "models/saa/upgrades/stock/pt1/base.mdl"
+ATT.Scale = 1
+ATT.BoneMerge = true
+ATT.Sway  = 0.91
+ATT.SpeedMult = 0.855/0.87
+ATT.RecoilMult = 1/1.41
+ATT.AimDownSightsTimeMult = 1.065
+ATT.SprintToFireTimeMult = 1.05
+ATT.RecoilKickMult = 1.075
+ATT.RecoilMultSights = 0.85
+
+
+
+ATT.Attachments = {
+	{
+        PrintName = "zenitco pt stock",
+        Category = "zenitcostock11",
+        Pos = Vector(0, 0, 0),
+        Icon_Offset = Vector(0, -2, 0),
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+
+    },
+	
+}
+
+
+
+
+ARC9.LoadAttachment(ATT, "saa_ak_zenitco_stock")
+
+-- end here
+
+ATT = {}
+
+ATT.PrintName = "ZenitCo pt-3 stock base"
+ATT.CompactName = "pt3 stock base"
+ATT.MenuCategory = "ARC9 - SAA Attachments"
+ ATT.Description = [[The telescopic PT-3 stock is mounted on the standard place of the stock AK 103, 104, 105, 74M, AKS74U and PP Vityaz, has a length adjustment mechanism and an adjustable cheek. A special lock is required for installation.]]
+ATT.Icon = Material("hud/arc9_saa/rus/akm_dc.png", "mips smooth")
+ATT.BoneMerge = true
+
+
+ATT.SortOrder = 0
+ATT.Category = "zenitcostock"
+ATT.Model = "models/saa/upgrades/stock/pt3/base.mdl"
+ATT.BoneMerge= true
+ATT.Scale = 1
+ATT.Sway  = 0.91
+ATT.SpeedMult = 0.855/0.87
+ATT.RecoilMult = 1/1.41
+ATT.AimDownSightsTimeMult = 1.065
+ATT.SprintToFireTimeMult = 1.05
+ATT.RecoilKickMult = 1.075
+ATT.RecoilMultSights = 0.85
+
+
+ATT.Attachments = {
+{
+        PrintName = "zenitco pt stock",
+        Category = "zenitcostock21",
+        Pos = Vector(0, 0, 0),
+        Icon_Offset = Vector(0, -2, 0),
+
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+
+    },
+	
+}
+
+
+
+ARC9.LoadAttachment(ATT, "saa_ak_zenitco_stock2")
+ATT = {}
+
+ATT.PrintName = "ZenitCo pt-1 stock retracted"
+ATT.CompactName = "pt1 stock "
+ATT.MenuCategory = "ARC9 - SAA Attachments"
+ ATT.Description = [[The telescopic PT-1 stock is mounted on the standard place of the stock AK 103, 104, 105, 74M, AKS74U and PP Vityaz, has a length adjustment mechanism and an adjustable cheek. A special lock is required for installation.]]
+ATT.Icon = Material("hud/arc9_saa/rus/akm_dc.png", "mips smooth")
+ATT.BoneMerge = true
+
+ATT.SortOrder = 0
+ATT.Category = "zenitcostock11"
+ATT.Model = "models/saa/upgrades/stock/pt1/stock.mdl"
+ATT.Scale = 1
+
+
+ATT.Attachments = {
+{
+        PrintName = "zenitco pt cheek thingy",
+        Category = "zenitcostock12",
+        Pos = Vector(0, 0, 0),
+        Icon_Offset = Vector(0, -2, 1),
+
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+
+    },
+	
+}
+
+
+
+
+ARC9.LoadAttachment(ATT, "saa_ak_zenitco_stock11")
+
+ATT = {}
+
+ATT.PrintName = "ZenitCo pt-1 stock extended"
+ATT.CompactName = "pt1 stock "
+ATT.MenuCategory = "ARC9 - SAA Attachments"
+ ATT.Description = [[The telescopic PT-1 stock is mounted on the standard place of the stock AK 103, 104, 105, 74M, AKS74U and PP Vityaz, has a length adjustment mechanism and an adjustable cheek. A special lock is required for installation.]]
+ATT.Icon = Material("hud/arc9_saa/rus/akm_dc.png", "mips smooth")
+
+
+ATT.SortOrder = 0
+ATT.Category = "zenitcostock11"
+ATT.Model = "models/saa/upgrades/stock/pt1/stock.mdl"
+ATT.ModelOffset = Vector(2.45, -5.546, 3.625)
+ATT.Scale = 1
+
+
+ATT.Attachments = {
+{
+        PrintName = "zenitco pt cheek thingy",
+        Category = "zenitcostock12",
+        Pos = Vector(0, -3, 0),
+        Icon_Offset = Vector(0, -2, 1),
+
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+
+    },
+	
+}
+
+
+
+
+ARC9.LoadAttachment(ATT, "saa_ak_zenitco_stock11e")
+ATT = {}
+
+ATT.PrintName = "ZenitCo pt-1 cheek thingy"
+ATT.CompactName = "pt1 cheek "
+ATT.MenuCategory = "ARC9 - SAA Attachments"
+ ATT.Description = [[The telescopic PT-1 stock is mounted on the standard place of the stock AK 103, 104, 105, 74M, AKS74U and PP Vityaz, has a length adjustment mechanism and an adjustable cheek. A special lock is required for installation.]]
+ATT.Icon = Material("hud/arc9_saa/rus/akm_dc.png", "mips smooth")
+
+
+ATT.SortOrder = 0
+ATT.Category = "zenitcostock12"
+ATT.Model = "models/saa/upgrades/stock/pt1/cheek.mdl"
+ATT.Scale = 1
+ATT.ModelOffset = Vector(2.45, -2.546, 3.625)
+
+
+
+
+
+
+ARC9.LoadAttachment(ATT, "saa_ak_zenitco_stock12")
+
+ATT = {}
+
+ATT.PrintName = "ZenitCo pt-1 cheek thingy extended "
+ATT.CompactName = "pt1 cheek "
+ATT.MenuCategory = "ARC9 - SAA Attachments"
+ ATT.Description = [[The telescopic PT-1 stock is mounted on the standard place of the stock AK 103, 104, 105, 74M, AKS74U and PP Vityaz, has a length adjustment mechanism and an adjustable cheek. A special lock is required for installation.]]
+ATT.Icon = Material("hud/arc9_saa/rus/akm_dc.png", "mips smooth")
+
+
+ATT.SortOrder = 0
+ATT.Category = "zenitcostock12"
+ATT.Model = "models/saa/upgrades/stock/pt1/cheek.mdl"
+ATT.Scale = 1
+ATT.ModelOffset = Vector(2.45, -2.546, 4.425)
+
+
+
+
+
+
+
+ARC9.LoadAttachment(ATT, "saa_ak_zenitco_stock12e")
+ATT = {}
+
+ATT.PrintName = "ZenitCo pt-3 stock retracted"
+ATT.CompactName = "pt3 stock "
+ATT.MenuCategory = "ARC9 - SAA Attachments"
+ ATT.Description = [[The telescopic PT-3 stock is mounted on the standard place of the stock AK 103, 104, 105, 74M, AKS74U and PP Vityaz, has a length adjustment mechanism and an adjustable cheek. A special lock is required for installation.]]
+ATT.Icon = Material("hud/arc9_saa/rus/akm_dc.png", "mips smooth")
+ATT.ModelOffset = Vector(2.45, -2.25, 3.625)
+
+ATT.SortOrder = 0
+ATT.Category = "zenitcostock21"
+ATT.Model = "models/saa/upgrades/stock/pt3/stock.mdl"
+ATT.Scale = 1
+
+
+ATT.Attachments = {
+{
+        PrintName = "zenitco pt cheek thingy",
+        Category = "zenitcostock22",
+        Pos = Vector(0, .296, 0),
+        Icon_Offset = Vector(0, -2, 1),
+
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+
+    },
+	
+}
+
+
+
+
+ARC9.LoadAttachment(ATT, "saa_ak_zenitco_stock21")
+
+ATT = {}
+
+ATT.PrintName = "ZenitCo pt-3 stock extended"
+ATT.CompactName = "pt3 stock "
+ATT.MenuCategory = "ARC9 - SAA Attachments"
+ ATT.Description = [[The telescopic PT-3 stock is mounted on the standard place of the stock AK 103, 104, 105, 74M, AKS74U and PP Vityaz, has a length adjustment mechanism and an adjustable cheek. A special lock is required for installation.]]
+ATT.Icon = Material("hud/arc9_saa/rus/akm_dc.png", "mips smooth")
+
+
+ATT.SortOrder = 0
+ATT.Category = "zenitcostock21"
+ATT.Model = "models/saa/upgrades/stock/pt3/stock.mdl"
+ATT.BoneMerge = true
+ATT.Scale = 1
+
+
+ATT.Attachments = {
+{
+        PrintName = "zenitco pt cheek thingy",
+        Category = "zenitcostock22",
+        Pos = Vector(0, 0, 0),
+        Icon_Offset = Vector(0, -2, 1),
+
+        Ang = Angle(0, 0, 0),
+        Scale = 1,
+
+    },
+	
+}
+
+
+
+
+ARC9.LoadAttachment(ATT, "saa_ak_zenitco_stock21e")
+ATT = {}
+
+ATT.PrintName = "ZenitCo pt-3 cheek thingy"
+ATT.CompactName = "pt3 cheek "
+ATT.MenuCategory = "ARC9 - SAA Attachments"
+ ATT.Description = [[The telescopic PT-3 stock is mounted on the standard place of the stock AK 103, 104, 105, 74M, AKS74U and PP Vityaz, has a length adjustment mechanism and an adjustable cheek. A special lock is required for installation.]]
+ATT.Icon = Material("hud/arc9_saa/rus/akm_dc.png", "mips smooth")
+
+
+ATT.SortOrder = 0
+ATT.Category = "zenitcostock22"
+ATT.Model = "models/saa/upgrades/stock/pt3/cheek.mdl"
+ATT.Scale = 1
+ATT.ModelOffset = Vector(2.45, -2.546, 3.625)
+
+
+
+
+
+
+ARC9.LoadAttachment(ATT, "saa_ak_zenitco_stock22")
+
+ATT = {}
+
+ATT.PrintName = "ZenitCo pt-3 cheek thingy extended "
+ATT.CompactName = "pt3 cheek "
+ATT.MenuCategory = "ARC9 - SAA Attachments"
+ ATT.Description = [[The telescopic PT-3 stock is mounted on the standard place of the stock AK 103, 104, 105, 74M, AKS74U and PP Vityaz, has a length adjustment mechanism and an adjustable cheek. A special lock is required for installation.]]
+ATT.Icon = Material("hud/arc9_saa/rus/akm_dc.png", "mips smooth")
+
+
+ATT.SortOrder = 0
+ATT.Category = "zenitcostock22"
+ATT.Model = "models/saa/upgrades/stock/pt3/cheek.mdl"
+ATT.Scale = 1
+ATT.ModelOffset = Vector(2.45, -2.546, 4.425)
+
+
+
+
+
+
+
+ARC9.LoadAttachment(ATT, "saa_ak_zenitco_stock22e")
 

@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\weapons\ak74_tarkov\ak74_materials/stock_ak_zenit_pt_1_LOD0_diff"
+	"$bumpmap" "models\weapons\ak74_tarkov\ak74_materials/stock_ak_zenit_pt_1_LOD0_nrm"
+	"$phongexponenttexture" "models\weapons\ak74_tarkov\ak74_materials/stock_ak_zenit_pt_1_LOD0_exponent"
+	"$basemapalphaenvmapmask" "1"
+
+	"$phong" "1"
+	"$phongalbedotint" "1"
+
+	"$phongboost" "24"
+	"$phongexponent" "48"
+	"$phongfresnelranges" "[1 5 22.5]"
+}

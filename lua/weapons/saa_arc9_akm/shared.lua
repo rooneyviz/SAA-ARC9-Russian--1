@@ -1227,6 +1227,11 @@ SWEP.AttachmentElements = {
             {11, 6},
         },
     },
+    ["no_mag"] = {
+        Bodygroups = {
+            {11, 7},
+        },
+    },
 
     ["steel_40"] = {
         Bodygroups = {

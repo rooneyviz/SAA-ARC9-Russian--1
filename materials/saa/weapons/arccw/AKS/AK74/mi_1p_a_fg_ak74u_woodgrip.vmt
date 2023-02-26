@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "saa\weapons\arccw\AKS\AK74\textures\ssak74\AKS-74U_Grip_D"
+	"$bumpmap" "saa\weapons\arccw\AKS\AK74\textures\ssak74\AKS-74U_Grip_N"
+	"$phongexponenttexture" "saa\weapons\arccw\AKS\AK74\textures\ssak74\AKS-74U_Grip_M"
+	"$phong" "1"
+	"$phongboost" "1.3"
+	"$phongexponent" "15"		
+	"$phongfresnelranges"	"[0.1 0.5 0.7]"
+	"$normalmapalphaenvmapmask" 	"1"
+}

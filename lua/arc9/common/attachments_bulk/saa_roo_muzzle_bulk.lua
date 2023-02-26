@@ -39,10 +39,30 @@ ATT.Model = "models/saa/upgrades/muzzle/aks74u_brake.mdl"
 ATT.Scale = 1
 ATT.ModelOffset = Vector(.275, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
-
+ATT.RPMMult = 1.1
 ATT.NoFlash = true
 
-ARC9.LoadAttachment(ATT, "saa_muz_74")
+ARC9.LoadAttachment(ATT, "saa_muz_s74u")
+ATT = {}
+
+
+ATT.PrintName = "AKMSU muzzle brake"
+ATT.CompactName = "akmsu brake"
+ATT.Icon = nil
+ATT.Description = [[flash hider intended for 7.62 usage that comes with the famouse AKMSU. Reduces muzzle flash .]]
+ATT.Category = {"muzzle","saa_545_muz","saa_m43_muz"}
+ATT.SortOrder = 1 
+
+ATT.MuzzleParticleOverride = "muzzleflash_mp5"
+ATT.Model = "models/saa/upgrades/muzzle/akmsu_brake.mdl"
+ATT.Scale = 1
+ATT.ModelOffset = Vector(.275, 0, 0)
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+ATT.RPMMult = 1.1
+ATT.NoFlash = true
+
+ARC9.LoadAttachment(ATT, "saa_muz_akmsu")
+
 
 ATT = {}
 

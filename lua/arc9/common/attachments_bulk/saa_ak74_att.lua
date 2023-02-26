@@ -237,16 +237,18 @@ ARC9.LoadAttachment(ATT, "saa_ak74_10_saiga")
 -- end here
 ATT = {}
 
-ATT.PrintName = "AK-12 30 round polymer magazine"
+ATT.PrintName = "5.45x39mm AK-12 30 round polymer magazine"
 ATT.CompactName = "30 ak12"
 
 ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description  = [[Lighter magazine designed for the ak12 and rpk16.]]
 ATT.Icon = Material("hud/arc9_saa/rus/ak74_mag.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Model = "models/saa/upgrades/magazines/ak12.mdl"
+ATT.ModelOffset = Vector(2.45, -101.1*1.1, 5.9*1.1)
+
 ATT.Scale = 1
 ATT.ActivateElements = {"no_mag"}
-ATT.Bonemerge = true
+ATT.BoneMerge = true
 ATT.MalfunctionMeanShotsToFailMult = 700/800
 ATT.RecoilSideMult = 1.1
 ATT.ClipSizeOverride = 30
@@ -255,5 +257,28 @@ ATT.ReloadTimeMult = 5/5.2
 
 ATT.Category = {"saa_ak74_mag"}
 ARC9.LoadAttachment(ATT, "saa_ak74_30_ak12")
+ATT = {}
+
+ATT.PrintName = "5.45x39mm 30 round romanian steel magazine"
+ATT.CompactName = "30 steel"
+
+ATT.MenuCategory = "ARC9 - SAA Attachments" 
+ATT.Description  = [[Lighter magazine designed for the AIMS-74.]]
+ATT.Icon = Material("hud/arc9_saa/rus/ak74_mag.png", "mips smooth")
+ATT.SortOrder = 0
+ATT.Model = "models/saa/upgrades/magazines/steel.mdl"
+ATT.ModelOffset = Vector(2.45, -10*1.1, 5.9*1.1)
+
+ATT.Scale = 1
+ATT.ActivateElements = {"no_mag"}
+ATT.BoneMerge = true
+ATT.Category = {"saa_ak74_mag"}
+
+ATT.ReloadTimeMult = 1.05263158
+ATT.RecoilSideMult = 0.970873786
+ATT.ClipSizeOverride = 30
+ATT.SpeedMult = 0.930232558
+
+ARC9.LoadAttachment(ATT, "saa_ak74_30_steel")
 
 
