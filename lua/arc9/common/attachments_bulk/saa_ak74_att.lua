@@ -38,7 +38,7 @@ ATT.RecoilSideMult = 1.3
 ATT.ClipSizeOverride = 95
 ATT.SpeedMult = 0.75
 
-ATT.ActivateElements = {"saa_ak74_73"}
+ATT.ActivateElements = {"saa_ak74_73","d_anim"}
 
 ARC9.LoadAttachment(ATT, "saa_ak74_promag_95")
 
@@ -280,5 +280,28 @@ ATT.ClipSizeOverride = 30
 ATT.SpeedMult = 0.930232558
 
 ARC9.LoadAttachment(ATT, "saa_ak74_30_steel")
+
+ATT = {}
+
+ATT.PrintName = "5.45x39mm 77 Round barrelXchange Drum Magazine"
+ATT.CompactName = "77 DRUM"
+ATT.MenuCategory = "ARC9 - SAA Attachments"
+ ATT.Description = [[a romanian 75 7.62x39 round drum converted by barrelXchange to a 77 round 5.45x39 mag . Notably prone to misfeeding jams and logically heavy.]]
+ATT.Icon = Material("hud/arc9_saa/rus/AKM_75rnd.png", "mips smooth")
+ATT.Model = "models/saa/upgrades/magazines/barrelxchange.mdl"
+ATT.Scale = 1
+ATT.BoneMerge = true
+ATT.SortOrder = 0
+ATT.Category = {"saa_ak74_mag"}
+
+ATT.RecoilSideMult = 1.3
+ATT.ClipSizeOverride = 77
+ATT.SpeedMult = 0.85
+
+ATT.ActivateElements = {"d_anim","no_mag"}
+
+ARC9.LoadAttachment(ATT, "saa_ak74_77_steel")
+
+-- end here
 
 

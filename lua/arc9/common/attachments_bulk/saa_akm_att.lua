@@ -12,8 +12,8 @@ ATT.Description = [[a pad that covers the back of the stock to ease the recoil o
 ATT.Icon = Material("hud/arc9_saa/rus/buttpad.png", "mips smooth")
 ATT.Model = "models/saa/upgrades/v_butt_pad.mdl"
 ATT.Scale = 1
-ATT.ModelOffset = Vector(0, 0, 0)
-ATT.ModelAngleOffset = Angle(0,0, 0)
+ATT.ModelOffset = Vector(-1, -.5, .25)
+ATT.ModelAngleOffset = Angle(0,-90, 0)
 
 ATT.SortOrder = 0
 ATT.Category = "saa_ak_pad"
@@ -715,7 +715,6 @@ ARC9.LoadAttachment(ATT, "saa_ak_helixguard")
 -- magazines
 
 -- start here
-
 ATT = {}
 
 ATT.PrintName = "7.62x39mm 75 Round Drum Magazine"
@@ -739,11 +738,42 @@ ARC9.LoadAttachment(ATT, "saa_akm_75_steel")
 -- start here
 ATT = {}
 
-ATT.PrintName = "7.62x39mm 30 round AK-100 magazine"
-ATT.CompactName = "30 AK-100"
+ATT.PrintName = "7.62x39mm orange polymer 30 round magazine"
+ATT.CompactName = "30 polymer"
 
 ATT.MenuCategory = "ARC9 - SAA Attachments" 
-ATT.Description  = [[Lighter magazine designed for the AIMS-74.]]
+ATT.Description  = [[Lighter polymer magazine designed for 7.62x39 AKs but with orange polymer to imitate bakelite magazines.]]
+ATT.Icon = Material("hud/arc9_saa/rus/AKM_30rnd.png", "mips smooth")
+ATT.SortOrder = 0
+ATT.Model = "models/saa/upgrades/magazines/ak100.mdl"
+ATT.ModelBodygroups = "1"
+
+ATT.Scale = 1
+ATT.ActivateElements = {"no_mag"}
+ATT.BoneMerge = true
+ATT.Category = {"saa_akm_mag"}
+
+
+ATT.ReloadTimeMult = 0.9134615389
+ATT.RecoilSideMult = 1.133
+ATT.ClipSizeOverride = 30
+ATT.SpeedMult = 1.0947046855
+
+
+
+
+
+
+ARC9.LoadAttachment(ATT, "saa_akm_30_ak100naranja")
+
+-- start here
+ATT = {}
+
+ATT.PrintName = "7.62x39mm polymer 30 round magazine"
+ATT.CompactName = "30 polymer"
+
+ATT.MenuCategory = "ARC9 - SAA Attachments" 
+ATT.Description  = [[Lighter polymer magazine designed for 7.62x39 AKs.]]
 ATT.Icon = Material("hud/arc9_saa/rus/AKM_30rnd.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Model = "models/saa/upgrades/magazines/ak100.mdl"
@@ -1502,8 +1532,8 @@ ARC9.LoadAttachment(ATT, "saa_akmn")
 -- end here
 ATT = {}
 
-ATT.PrintName = "ZenitCo RP-1 Extended Charging handle"
-ATT.CompactName = "RP-1"
+ATT.PrintName = "Tromix Extended Charging handle"
+ATT.CompactName = "extended"
 ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description = [[Extended charging handle produced by private companies. Fitted with a sleek steel design, allows for a quicker reload]]
 
 
@@ -1711,7 +1741,6 @@ ATT.MenuCategory = "ARC9 - SAA Attachments" ATT.Description = [[The lock is desi
 ATT.Icon = Material("hud/arc9_saa/rus/ar_stock.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Model = "models/saa/upgrades/stock/ptlock.mdl"
-ATT.ModelOffset = Vector(2.45, -2.59*1.1, 3.22*1.1)
 ATT.Scale = 1
 ATT.BoneMerge = true
 ATT.EFTErgoAdd = -1
@@ -1747,6 +1776,7 @@ ATT.Category = "zenitcostock"
 ATT.Model = "models/saa/upgrades/stock/pt1/base.mdl"
 ATT.Scale = 1
 ATT.BoneMerge = true
+
 ATT.Sway  = 0.91
 ATT.SpeedMult = 0.855/0.87
 ATT.RecoilMult = 1/1.41
@@ -2042,4 +2072,24 @@ ATT.ModelOffset = Vector(2.45, -2.546, 4.425)
 
 
 ARC9.LoadAttachment(ATT, "saa_ak_zenitco_stock22e")
+ATT = {}
+
+ATT.PrintName = "7.62x39mm romanian 75 roundDrum Magazine"
+ATT.CompactName = "roamnian 75 DRUM"
+ATT.MenuCategory = "ARC9 - SAA Attachments"
+ ATT.Description = [[a romanian 75 7.62x39 round drum made for RPKs. Notably prone to misfeeding jams and logically heavy.]]
+ATT.Icon = Material("hud/arc9_saa/rus/AKM_75rnd.png", "mips smooth")
+ATT.Model = "models/saa/upgrades/magazines/barrelxchange.mdl"
+ATT.Scale = 1
+ATT.BoneMerge = true
+ATT.SortOrder = 0
+ATT.Category = "saa_akm_mag"
+
+ATT.RecoilSideMult = 1.3
+ATT.ClipSizeOverride = 75
+ATT.SpeedMult = 0.85
+
+ATT.ActivateElements = {"d_anim","no_mag"}
+
+ARC9.LoadAttachment(ATT, "saa_akm_77_steel")
 

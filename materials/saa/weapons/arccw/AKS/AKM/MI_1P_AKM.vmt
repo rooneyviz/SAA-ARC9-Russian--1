@@ -1,8 +1,8 @@
 "VertexLitGeneric"
 {
-	"$basetexture"				"saa\weapons\arccw\AKS\AKM\sandstorm\eft_akm_d"
-	"$bumpmap"					"saa\weapons\arccw\AKS\AKM\sandstorm\eft_akm_n"
-	"$phongexponenttexture"		"saa\weapons\arccw\AKS\AKM\sandstorm\eft_akm_e"
+	"$basetexture"				"saa\weapons\arccw\AKS\AKM\sandstorm\T_AKM_BC"
+	"$bumpmap"					"saa\weapons\arccw\AKS\AKM\sandstorm\T_AKM_N"
+	"$phongexponenttexture"		"saa\weapons\arccw\AKS\AKM\sandstorm\T_AKM_M"
 	"$nocull"	"1"
 	"$phongwarptexture"			"models\weapons\saa\shared\lightwarps\phongwarp_metal"
 	"$color2"					"[0.45 0.45 0.45]"

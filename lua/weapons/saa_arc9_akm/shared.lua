@@ -1,5 +1,4 @@
 AddCSLuaFile()
-
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - SAA"

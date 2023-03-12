@@ -153,10 +153,8 @@ ATT.Category = "saa_aku_hg"
 ATT.ActivateElements = {"AKMSU", "exclude_gp25"}
 
 ATT.SortOrder = 0
-ATT.Model = "models/weapons/arc9_eft_shared/atts/foregip/eft_foregrip_rk1.mdl"
-ATT.ModelAngleOffset = Angle(15, -90, 0)
-ATT.ModelOffset = Vector(-0.5, 0, -0.5)
-ATT.ModelMaterial = "models/weapons/saa/shared/unlit_transparent"
+ATT.Model = "models/saa/upgrades/akmsu_hand.mdl"
+ATT.BoneMerge = true
 ATT.Scale = 1
 ATT.SortOrder = 0
 ATT.LHIK_Priority = 10

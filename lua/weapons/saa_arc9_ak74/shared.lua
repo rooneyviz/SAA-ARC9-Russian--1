@@ -1,5 +1,4 @@
 AddCSLuaFile()
-
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - SAA"
@@ -366,7 +365,7 @@ SWEP.Hook_TranslateAnimation = function (self, anim)
         if self:GetUBGL() then
             suffix = "_glsetup"
         end
-    elseif attached["saa_ak74_73"] then
+    elseif attached["d_anim"] then
         suffix = "_drum"
     else
         suffix = ""
