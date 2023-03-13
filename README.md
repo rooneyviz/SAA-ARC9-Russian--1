@@ -9,14 +9,15 @@ Copyright 2022 ShadowRUN 幸運な.
 For further information and permission contact [Stalol](https://steamcommunity.com/id/httpsexinternalxff) or [ShadowRUN](https://steamcommunity.com/id/RshaUdowN) on Steam.
 
 REQUIREMENTS:
+this or textures from this mw ak107  https://steamcommunity.com/sharedfiles/filedetails/?id=2785316297
 
-this eft prop pack https://steamcommunity.com/sharedfiles/filedetails/?id=2178599577
+this or textures from this eft prop pack https://steamcommunity.com/sharedfiles/filedetails/?id=2178599577
 
 this shared content https://github.com/Stalol77/SAA-Shared
 
-ARC9 weapons base by artic and more either from steam workshop or github
+ARC9 weapons base by artic and more people either from steam workshop or github
 
-ARC9 EFT shared content by DARSU from either the steam workshop or github
+ARC9 EFT shared content by DAR-SU from either the steam workshop or github
 
 and obviously
 A copy of Garrys mod(and a computer that fits its requirements)
@@ -43,3 +44,5 @@ DIFFERENCES From Stalols version:
 9. Probably more
 
 10. AKSU series
+
+11. AK107,108,109 BARS aks
